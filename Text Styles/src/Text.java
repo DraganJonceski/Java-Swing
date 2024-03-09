@@ -1,0 +1,38 @@
+import javax.swing.*;
+public class Text extends JFrame {
+    JTextPane text;
+    JButton bold, italic, underline;
+
+    Text(){
+        text = new JTextPane();
+     bold = new JButton("bold");
+     italic = new JButton("italic");
+     underline = new JButton("underline");
+
+        bold.setBounds(50,150,100,40);
+        italic.setBounds(200,150,100,40);
+        underline.setBounds(350,150,100,40);
+
+        text.setText("Dragancho");
+        text.setBounds(200,50,100,40);
+
+        add(bold);
+        add(italic);
+        add(underline);
+        add(text);
+
+        setSize(525,500);
+
+        setLayout(null);
+        setVisible(true);
+    }
+
+    static void addStyle(){
+
+    }
+
+
+    public static void main(String[] args){
+        new Text();
+    }
+}
